@@ -1,0 +1,20 @@
+{
+  "name": "get_your_guide_user_tracker",
+  "version": "1.0.0",
+  "description": "present a snapshot of what a Get Your Guide user is doing right now",
+  "main": "app.js",
+  "scripts": {
+    "build": "gulp build && node app",
+    "postinstall": "npm run build"
+  },
+  "author": "Sam Hanaln",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.1.0",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0"
+  }
+}

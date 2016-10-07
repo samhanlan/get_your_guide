@@ -1,0 +1,33 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.15.8
+3 info using node@v4.4.7
+4 verbose readDependencies loading dependencies from /Users/Sam/WebProjects/get_your_guide/package.json
+5 error install Couldn't read dependencies
+6 verbose stack Error: Failed to parse json
+6 verbose stack Trailing comma in object at 8:3
+6 verbose stack   },
+6 verbose stack   ^
+6 verbose stack     at parseError (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:390:11)
+6 verbose stack     at parseJson (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:79:23)
+6 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:48:5
+6 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
+6 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+7 verbose cwd /Users/Sam/WebProjects/get_your_guide
+8 error Darwin 14.5.0
+9 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+10 error node v4.4.7
+11 error npm  v2.15.8
+12 error file /Users/Sam/WebProjects/get_your_guide/package.json
+13 error code EJSONPARSE
+14 error Failed to parse json
+14 error Trailing comma in object at 8:3
+14 error   },
+14 error   ^
+15 error File: /Users/Sam/WebProjects/get_your_guide/package.json
+16 error Failed to parse package.json data.
+16 error package.json must be actual JSON, not just JavaScript.
+16 error
+16 error This is not a bug in npm.
+16 error Tell the package author to fix their package.json file. JSON.parse
+17 verbose exit [ 1, true ]

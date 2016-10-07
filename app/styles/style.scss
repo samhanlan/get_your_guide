@@ -1,0 +1,59 @@
+@import 'https://fonts.googleapis.com/css?family=Lato';
+
+$prim: #ff3d00;
+$beta: #fefefe;
+
+body { font-family: Lato, 'Helvetica Neue', 'Helvetica', sans-serif; }
+
+#overlay {
+  position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  h3 {
+  	padding: 40px;
+  }
+}
+#container {
+	width: 66.6%;
+	margin: 60px auto 0;
+}
+#customerFirstName {
+	margin-left: 20px;
+}
+#activityWrap {
+	box-sizing: border-box;
+	border: 20px solid $beta;
+	overflow: hidden;
+}
+#activityCarousel {
+	position: relative;
+	margin-bottom: 15px;
+	width: 200%;
+	transition: right 0.5s;
+}
+#activityCarousel:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#activityTitle {
+	margin: 0;
+}
+// transitions
+#container,
+#overlay,
+#activityPicture {
+	transition: opacity 0.5s;
+}
+#activityPicture,
+#activityMap {
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+}
+// utilities
+.text-prim { color: $prim; }
+.text-beta { color: $beta; }
+.bg-prim { background-color: $prim; }
+.bg-beta { background-color: $beta; }
